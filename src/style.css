@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(39, 43, 51);
+}
+.flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.info_card{
+    width: 650px;
+    display: flex;
+    border-radius: 10px; 
+    margin:50px auto;
+    flex-wrap: wrap;
+    background-color: rgb(64, 67, 73);
+}
+img{
+    border-radius: 10px 0 0 10px ;
+}
+h1{
+    color: #ffff;
+    width: 300px;
+    margin: 50px 0 20px 10px;
+}
+h3{
+    color: #ffff;
+    width: 300px;
+    margin-left: 10px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+h4{
+    color: #afaaaad8;
+    font-size: 20px; 
+    margin-left: 10px;
+    margin-top: 10px;  
+}
+@media screen and (max-width: 560px) {
+    .flex{
+        grid-template-columns: 1fr;
+    }
+}
+a{
+    text-decoration: none;
+}
