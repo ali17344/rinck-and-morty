@@ -7,7 +7,7 @@ import InfoPage from "./InfoPage"
 function App() {
   const [data,setData] = useState([])
     const get_api = () => {
-          axios.get('https://rickandmortyapi.com/api/character ')
+          axios.get('https://rickandmortyapi.com/api/character?page=40 ')
           .then(({data}) => {setData(data.results)})
     }
   return (
